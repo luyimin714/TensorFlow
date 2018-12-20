@@ -2,10 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39f2542f-4cc2-45e7-9eac-2c8215981558" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/ReinforcementLearning-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/ReinforcementLearning-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReinforcementLearning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ReinforcementLearning.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mnist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NMT.py" beforeDir="false" afterPath="$PROJECT_DIR$/nmt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/autoencoder.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/autoencoder.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/autoencoder.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/denoising_autoencoder.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/denoising_autoencoder.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/denoising_autoencoder.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/mnist.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/mnist.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/mnist.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/my_model_final.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/my_model_final.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/my_model_final.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/policy_gradients.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/policy_gradients.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/policy_gradients.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/pretrain.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/pretrain.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/pretrain.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/rnn.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/rnn.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/rnn.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/sparse.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/sparse.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/sparse.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/vae.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/vae.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/vae.ckpt.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,27 +40,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NMT.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/train.zh">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="-4104" />
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mnist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1805">
+            <state relative-caret-position="757">
               <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
               <folding>
                 <element signature="e#87#110#0" expanded="true" />
@@ -46,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LanguageModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1979">
-              <caret line="164" column="8" lean-forward="true" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
+            <state relative-caret-position="1713">
+              <caret line="164" column="8" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
               <folding>
                 <element signature="e#87#105#0" expanded="true" />
               </folding>
@@ -58,8 +68,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PaddingBatch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+            <state relative-caret-position="874">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nmt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3629">
+              <caret line="191" column="16" selection-start-line="191" selection-start-column="16" selection-end-line="191" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,23 +95,30 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tf.flo</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/NMT.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/nmt.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/PaddingBatch.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/LanguageModel.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/NMT.py" />
         <option value="$PROJECT_DIR$/LanguageModel.py" />
         <option value="$PROJECT_DIR$/PaddingBatch.py" />
         <option value="$PROJECT_DIR$/mnist.py" />
         <option value="$PROJECT_DIR$/LanguageModel.py" />
+        <option value="$PROJECT_DIR$/Test.py" />
         <option value="$PROJECT_DIR$/NMT.py" />
+        <option value="$PROJECT_DIR$/NMT.py" />
+        <option value="$PROJECT_DIR$/nmt.py" />
       </list>
     </option>
   </component>
@@ -110,7 +139,7 @@
         <subPane>
           <expand>
             <path>
-              <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PycharmProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="PycharmProject" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -134,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mnist">
+  <component name="RunManager" selected="Python.nmt">
     <configuration name="LanguageModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,7 +197,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NMT.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\luyimin\Documents\MachineLearning\TensorFlow\PycharmProject\nmt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PycharmProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -198,14 +248,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="nmt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PycharmProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nmt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.LanguageModel" />
       <item itemvalue="Python.mnist" />
       <item itemvalue="Python.NMT" />
+      <item itemvalue="Python.Test" />
+      <item itemvalue="Python.nmt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.nmt" />
         <item itemvalue="Python.NMT" />
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.mnist" />
         <item itemvalue="Python.LanguageModel" />
       </list>
@@ -227,20 +302,20 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17871326" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17871326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3280142" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3268206" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -250,10 +325,27 @@
     <entry file="file://$PROJECT_DIR$/ptb.test">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/train.zh">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2344">
+          <caret line="2273" column="4" selection-start-line="2273" selection-start-column="4" selection-end-line="2273" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LanguageModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1979">
-          <caret line="164" column="8" lean-forward="true" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
+        <state relative-caret-position="1713">
+          <caret line="164" column="8" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
           <folding>
             <element signature="e#87#105#0" expanded="true" />
           </folding>
@@ -262,7 +354,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mnist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1805">
+        <state relative-caret-position="757">
           <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
           <folding>
             <element signature="e#87#110#0" expanded="true" />
@@ -272,21 +364,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PaddingBatch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+        <state relative-caret-position="874">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NMT.py">
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/training/saver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="116">
+          <caret line="1280" selection-start-line="1280" selection-end-line="1280" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train.zh">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-4104" />
+    <entry file="file://$PROJECT_DIR$/nmt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3629">
+          <caret line="191" column="16" selection-start-line="191" selection-start-column="16" selection-end-line="191" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
