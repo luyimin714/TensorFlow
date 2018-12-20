@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39f2542f-4cc2-45e7-9eac-2c8215981558" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NMT.py" beforeDir="false" afterPath="$PROJECT_DIR$/nmt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/autoencoder.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/autoencoder.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/autoencoder.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/denoising_autoencoder.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/denoising_autoencoder.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/denoising_autoencoder.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/mnist.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/mnist.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/mnist.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/my_model_final.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/my_model_final.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/my_model_final.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/policy_gradients.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/policy_gradients.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/policy_gradients.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/pretrain.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/pretrain.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/pretrain.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/rnn.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/rnn.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/rnn.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/sparse.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/sparse.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/sparse.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/vae.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/vae.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/vae.ckpt.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="39f2542f-4cc2-45e7-9eac-2c8215981558" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +13,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mnist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
+            <state relative-caret-position="1767">
               <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
               <folding>
                 <element signature="e#87#110#0" expanded="true" />
@@ -56,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LanguageModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1713">
+            <state relative-caret-position="3097">
               <caret line="164" column="8" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
               <folding>
                 <element signature="e#87#105#0" expanded="true" />
@@ -69,21 +38,45 @@
         <entry file="file://$PROJECT_DIR$/PaddingBatch.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="874">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nmt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3629">
-              <caret line="191" column="16" selection-start-line="191" selection-start-column="16" selection-end-line="191" selection-end-column="16" />
+            <state relative-caret-position="-1558">
+              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train.zh">
+          <provider selected="true" editor-type-id="LargeFileEditor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zh.vocab">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-75428">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ptb.vocab">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/en.vocab">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -134,7 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,6 +138,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,8 +294,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17871326" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17871326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,9 +319,6 @@
     <entry file="file://$PROJECT_DIR$/ptb.test">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/train.zh">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2344">
@@ -335,40 +326,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LanguageModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1713">
-          <caret line="164" column="8" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
-          <folding>
-            <element signature="e#87#105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mnist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
-          <folding>
-            <element signature="e#87#110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PaddingBatch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.py" />
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/training/saver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -376,15 +334,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1767">
+          <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
+          <folding>
+            <element signature="e#87#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LanguageModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3097">
+          <caret line="164" column="8" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
+          <folding>
+            <element signature="e#87#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PaddingBatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.en">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-476909" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nmt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3629">
-          <caret line="191" column="16" selection-start-line="191" selection-start-column="16" selection-end-line="191" selection-end-column="16" />
+        <state relative-caret-position="-1558">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.zh">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zh.vocab">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75428">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ptb.vocab">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/en.vocab">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
