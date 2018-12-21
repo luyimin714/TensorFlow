@@ -30,9 +30,11 @@ TRG_VOCAB = "zh.vocab"
 class NMTModel(object):
     def __init__(self):
         #定义编码器和解码器所使用的LSTM结构
-        self.enc_cell = tf.nn.rnn_cell.MultiRNNCell(
-            [tf.nn.rnn_cell.BasicLSTMCell(HIDDEN_SIZE) for _ in range(NUM_LAYERS)]
-        )
+        # self.enc_cell = tf.nn.rnn_cell.MultiRNNCell(    #单向编码器
+        #     [tf.nn.rnn_cell.BasicLSTMCell(HIDDEN_SIZE) for _ in range(NUM_LAYERS)]
+        # )
+        self.enc_cell_fw = tf.nn.rnn_cell.BasicLSTMCell(HIDDEN_SIZE)  #前向
+        self.enc_cell_bw = tf.nn.rnn_cell.BasicLSTMCell(HIDDEN_SIZE)  #后向
         self.dec_cell = tf.nn.rnn_cell.MultiRNNCell(
             [tf.nn.rnn_cell.BasicLSTMCell(HIDDEN_SIZE) for _ in range(NUM_LAYERS)]
         )
@@ -65,17 +67,41 @@ class NMTModel(object):
         trg_emb = tf.nn.dropout(trg_emb, KEEP_PROB)
 
         #使用dynamic_rnn构造编码器
-        with tf.variable_scope("encoder"):
-            enc_outputs, enc_state = tf.nn.dynamic_rnn(self.enc_cell,
-                                                       src_emb,
-                                                       sequence_length=src_size,
-                                                       dtype=tf.float32)
+        # with tf.variable_scope("encoder"):
+        #     enc_outputs, enc_state = tf.nn.dynamic_rnn(self.enc_cell,
+        #                                                src_emb,
+        #                                                sequence_length=src_size,
+        #                                                dtype=tf.float32)
+
+        #使用bidirectional_dynamic_rnn构造双向循环网络
+        enc_outputs, enc_state = tf.nn.bidirectional_dynamic_rnn(self.enc_cell_fw,
+                                                                 self.enc_cell_bw,
+                                                                 src_emb,
+                                                                 sequence_length=src_size,
+                                                                 dtype=tf.float32)
+        #将两个LSTM的输出拼接为1个张量
+        enc_outputs = tf.concat([enc_outputs[0], enc_outputs[1]], -1)
+
         #使用dynamic_rnn构造解码器
+        # with tf.variable_scope("decoder"):
+        #     dec_outputs, dec_state = tf.nn.dynamic_rnn(self.dec_cell,
+        #                                                trg_emb,
+        #                                                sequence_length=trg_size,
+        #                                                initial_state=enc_state)
+
         with tf.variable_scope("decoder"):
-            dec_outputs, dec_state = tf.nn.dynamic_rnn(self.dec_cell,
-                                                       trg_emb,
-                                                       sequence_length=trg_size,
-                                                       initial_state=enc_state)
+            #选择注意力权重的计算模型 BahdanauAttention是使用一个隐藏层的前馈神经网络
+            attention_mechanism = tf.contrib.seq2seq.BahdanauAttention(HIDDEN_SIZE,
+                                                                       enc_outputs,
+                                                                       memory_sequence_length=src_size)
+            #将解码器的循环神经网络和注意力机制一起封装成更高层的循环神经网络
+            attention_cell = tf.contrib.seq2seq.AttentionWrapper(self.dec_cell,
+                                                                 attention_mechanism,
+                                                                 attention_layer_size=HIDDEN_SIZE)
+            dec_outputs, _ = tf.nn.dynamic_rnn(attention_cell,
+                                               trg_emb,
+                                               sequence_length=trg_size,
+                                               dtype=tf.float32)
 
         #计算解码器每一步的损失
         output = tf.reshape(dec_outputs, shape=[-1, HIDDEN_SIZE])

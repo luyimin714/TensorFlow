@@ -32,8 +32,8 @@ class PTBModel(object):
         self.num_steps = num_steps
         
         #每一步的输入和预期输出
-        self.input_data = tf.placeholder(tf.int32, shape=(batch_size, num_steps))
-        self.targets = tf.placeholder(tf.int32, shape=(batch_size, num_steps))
+        self.input_data = tf.placeholder(tf.int32, shape=[batch_size, num_steps])
+        self.targets = tf.placeholder(tf.int32, shape=[batch_size, num_steps])
         
         #定义使用LSTM结构为循环结构
         dropout_keep_prob = LSTM_KEEP_PROB if is_training else 1.0
@@ -48,7 +48,7 @@ class PTBModel(object):
         self.initial_state = cell.zero_state(batch_size, tf.float32)
         
         #定义词嵌入矩阵
-        embedding = tf.get_variable("embedding", shape=(VOCAB_SIZE, HIDDEN_SIZE))
+        embedding = tf.get_variable("embedding", shape=[VOCAB_SIZE, HIDDEN_SIZE])
         #将输入单词转换为词向量
         inputs = tf.nn.embedding_lookup(embedding, self.input_data)
         
@@ -65,13 +65,13 @@ class PTBModel(object):
                 cell_output, state = cell(inputs[:, time_step, :], state)
                 outputs.append(cell_output)
                 
-        output = tf.reshape(tf.concat(outputs, 1), shape=(-1, HIDDEN_SIZE))
+        output = tf.reshape(tf.concat(outputs, 1), shape=[-1, HIDDEN_SIZE])
                 
         if SHARE_EMB_AND_SOFTMAX:
             weight = tf.transpose(embedding)
         else:
-            weight = tf.get_variable("weight", shape=(HIDDEN_SIZE, VOCAB_SIZE))
-        bias = tf.get_variable("bias", shape=(VOCAB_SIZE))
+            weight = tf.get_variable("weight", shape=[HIDDEN_SIZE, VOCAB_SIZE])
+        bias = tf.get_variable("bias", shape=[VOCAB_SIZE])
         logits = tf.matmul(output, weight) + bias
         
         loss = tf.nn.sparse_softmax_cross_entropy_with_logits(labels=tf.reshape(self.targets, [-1]),
